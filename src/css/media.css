@@ -1,0 +1,224 @@
+@media (max-width: 760px) {
+  /* Home */
+  .home {
+    margin: 30px 10px;
+  }
+
+  .new-arrival .new {
+    color: #c720ab;
+    animation: new-animation 3s infinite;
+    margin-bottom: 30px;
+  }
+
+  .new-arrival a {
+    margin-bottom: 20px;
+  }
+
+  .genre-buttons {
+    flex-direction: column;
+  }
+
+  /* Nav */
+  .nav .logo-title {
+    justify-content: center;
+  }
+
+  .nav h1 {
+    width: max-content;
+  }
+
+  .nav ul {
+    justify-content: center;
+  }
+
+  /* BackgroundLogo */
+  .background-logo {
+    width: 39rem;
+    top: 100px;
+    right: -300px;
+  }
+
+  /* Music */
+  .pagination {
+    padding-bottom: 10px;
+  }
+
+  /* License */
+  .license {
+    text-align: center;
+    margin: 10px;
+  }
+
+  .license ul {
+    align-items: center;
+  }
+
+  /* Card */
+  .card {
+    transform: scale(1.2);
+    margin: 20px 50px 100px 50px;
+  }
+  .card:hover {
+    transform: scale(1.26);
+  }
+
+  .playing {
+    transform: scale(1.26);
+  }
+
+  .card-title {
+    width: 90%;
+    margin: 0 5%;
+    border: 1px solid #c720ab;
+    border-radius: 15px;
+    height: 28px;
+  }
+  .card-title h3 {
+    margin-top: 3px;
+  }
+
+  .card-title a {
+    color: #c720ab;
+  }
+
+  .card-title:active {
+    background-color: #c720ab;
+    opacity: 0.7;
+  }
+  .card-title a:active {
+    color: #fff;
+    opacity: 0.7;
+  }
+
+  .card-title a:hover {
+    font-size: inherit;
+  }
+
+  /* description */
+
+  .description-container {
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .about-track {
+    align-items: center;
+  }
+
+  .tags {
+    padding: 0 0 170px;
+    margin: 0 auto;
+  }
+  .tags h4 {
+    width: 90vw;
+  }
+  .tag-name {
+    flex-direction: column;
+  }
+
+  .tags a {
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+
+  /* MusicPlayer */
+  .title-genre {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a3a3a;
+    width: 100vw;
+    bottom: 90px;
+    z-index: 2;
+    height: 40px;
+  }
+  .time-display {
+    top: auto;
+    right: auto;
+    z-index: 11;
+    bottom: 36px;
+    left: 5px;
+  }
+  .progress-background {
+    top: auto;
+    left: auto;
+    bottom: 60px;
+    height: 30px;
+
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
+  }
+  .progress-background:hover {
+    height: 30px;
+  }
+  .progress {
+    box-shadow: 0px 0px 0px rgba(146, 25, 126, 0.7);
+  }
+  .progress-hoverarea {
+    height: 30px;
+  }
+  .controls {
+    top: auto;
+    right: auto;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    width: 100vw;
+    bottom: 0;
+  }
+  .controls i {
+    flex-grow: 1;
+    height: 60px;
+    margin: 0;
+    background-color: #3a3a3a;
+    border-radius: 0;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.4);
+    border-left: 1px solid #4d4d4d;
+  }
+  .controls .volume {
+    display: none;
+  }
+  .controls .marquee {
+    display: none;
+  }
+
+  /* Download */
+  .download-background {
+    width: 90vw;
+    margin-left: -45vw;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-menu ul li {
+    width: 80vw;
+    text-align: center;
+    padding: 14px 28px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: #eceaea;
+  }
+
+  .footer-menu ul a {
+    text-decoration: none;
+    color: #3a3a3a;
+  }
+
+  .sns-links ul i {
+    font-size: 50px;
+  }
+
+  .copyright {
+    top: 290px;
+  }
+  .extra-padding {
+    padding-bottom: 140px;
+  }
+}

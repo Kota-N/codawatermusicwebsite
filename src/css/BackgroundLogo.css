@@ -1,0 +1,27 @@
+.background-logo {
+  position: fixed;
+  opacity: 0.04;
+  width: 65rem;
+  animation: logo 120s infinite ease;
+  top: 5rem;
+  right: -20rem;
+  z-index: -1;
+}
+
+@keyframes logo {
+  0% {
+    transform: rotate(-180deg);
+  }
+  25% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}

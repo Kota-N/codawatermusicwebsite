@@ -1,0 +1,78 @@
+.search {
+  position: relative;
+  margin: 2rem 0 0 2rem;
+  overflow: hidden;
+  padding: 1.5rem 0;
+}
+
+.search p {
+  position: absolute;
+  transition: all 0.5s;
+  opacity: 0.5;
+  color: #c720ab;
+  top: 0.8rem;
+  left: 0rem;
+  font-size: 0.7rem;
+  z-index: -1;
+}
+
+.search .search-placeholder {
+  top: 1.8rem;
+  left: 0.3rem;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+  color: #3a3a3a;
+}
+
+.search input:focus + p {
+  color: #c720ab;
+  top: 0.8rem;
+  left: 0rem;
+  font-size: 0.7rem;
+}
+
+.search-underline {
+  position: absolute;
+  display: inline-block;
+  height: 1.5px;
+  width: 13rem;
+  background-color: #c720ab;
+  top: 3.28rem;
+  left: 0;
+  transition: all 0.5s ease;
+  transform: translateX(-100%);
+}
+
+.search input:focus ~ .search-underline {
+  transform: translateX(0);
+}
+
+.search input {
+  font-size: 1rem;
+  border: none;
+  padding: 0.2rem;
+  width: 13rem;
+  background-color: inherit;
+  border-bottom: 1px solid #3a3a3a;
+  color: hsl(310, 58%, 12%);
+  letter-spacing: 0.1rem;
+}
+
+.search i {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  color: #310d2b;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.search i:hover {
+  color: #c720ab;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search i:active {
+  opacity: 0.5;
+}

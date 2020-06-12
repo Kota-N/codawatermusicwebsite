@@ -9,7 +9,7 @@ const License = () => {
           <h3>CREATIVE COMMONS LICENSE</h3>
         </li>
         <li>
-          <a href="http://creativecommons.org/licenses/by/4.0/">
+          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
             Creative Commons Attribution 4.0 International License
           </a>
         </li>

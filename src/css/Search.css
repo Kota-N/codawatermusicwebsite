@@ -58,6 +58,10 @@
   letter-spacing: 0.1rem;
 }
 
+.search input:focus {
+  outline: none;
+}
+
 .search i {
   margin-left: 0.5rem;
   padding: 0.5rem;

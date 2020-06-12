@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from './Card';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -7,6 +7,8 @@ import Download from './Download';
 const Description = ({ location }) => {
   const item = location.state;
   const dlClick = useSelector(state => state.dlClick);
+
+  useEffect(() => window.scrollTo(0, 0), []);
 
   return (
     <div className="description">

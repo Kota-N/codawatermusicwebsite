@@ -1,9 +1,13 @@
 import React from 'react';
 
-const ProgressBar = ({ currentPercent, currentUrl, updateProgress }) => {
+const ProgressBar = ({
+  currentProgressPercent,
+  currentUrl,
+  updateProgress,
+}) => {
   return (
     <div className="progress-background">
-      <div style={{ width: currentPercent }} className="progress">
+      <div style={{ width: currentProgressPercent }} className="progress">
         <div
           onClick={e => {
             currentUrl && updateProgress(e);

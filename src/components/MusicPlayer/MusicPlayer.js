@@ -13,7 +13,7 @@ const MusicPlayer = () => {
 
   const dispatch = useDispatch();
   const audio = document.querySelector('audio');
-  const [currentPercent, setCurrentPercent] = useState('100%');
+  const [currentProgressPercent, setCurrentProgressPercent] = useState('100%');
   const [currentSecond, setCurrentSecond] = useState(0);
   const [currentMinute, setCurrentMinute] = useState(0);
   const [totalMinute, setTotalMinute] = useState(0);
@@ -84,7 +84,7 @@ const MusicPlayer = () => {
   return (
     <div className="music-player">
       <ProgressBar
-        currentPercent={currentPercent}
+        currentProgressPercent={currentProgressPercent}
         currentUrl={currentUrl}
         updateProgress={updateProgress}
       />
@@ -103,10 +103,16 @@ const MusicPlayer = () => {
           );
         }}
         onTimeUpdate={() => {
-          setCurrentPercent(`${(audio.currentTime / audio.duration) * 100}%`);
+          setCurrentProgressPercent(
+            `${(audio.currentTime / audio.duration) * 100}%`
+          );
           setCurrentSecond(Math.floor(audio.currentTime));
           setCurrentMinute(Math.floor(audio.currentTime / 60));
           audio.paused ? dispatch(paused()) : dispatch(played());
+          if (audio.currentTime === audio.duration) {
+            audio.pause();
+            dispatch(paused());
+          }
         }}
         src={currentUrl}
       />

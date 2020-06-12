@@ -1,7 +1,7 @@
 import { FETCH_ITEMS, FETCH_INDEX } from './types';
 
 export const fetchItems = pageNumber => dispatch => {
-  fetch(`/music?page=${pageNumber}`)
+  fetch(`/api/items/music?page=${pageNumber}`)
     .then(res => res.json())
     .then(data =>
       dispatch({
@@ -12,7 +12,7 @@ export const fetchItems = pageNumber => dispatch => {
 };
 
 export const fetchIndex = () => dispatch => {
-  fetch('/music/all')
+  fetch('/api/items/music/all')
     .then(res => res.json())
     .then(data =>
       dispatch({

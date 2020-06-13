@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const License = () => {
+  useEffect(() => window.scrollTo(0, 0), []);
+
   return (
     <div className="license">
       <ul>
@@ -9,7 +11,11 @@ const License = () => {
           <h3>CREATIVE COMMONS LICENSE</h3>
         </li>
         <li>
-          <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">
+          <a
+            href="http://creativecommons.org/licenses/by/4.0/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Creative Commons Attribution 4.0 International License
           </a>
         </li>

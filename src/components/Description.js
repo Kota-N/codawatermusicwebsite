@@ -30,9 +30,7 @@ const Description = ({ location }) => {
                 {item.genre}
               </Link>
             ) : (
-              <Link to={`/music/search/${item.genre}/page=1`}>
-                {item.genre}
-              </Link>
+              <Link to={`/music/genre/${item.genre}/page=1`}>{item.genre}</Link>
             )}
           </h3>
           <p>{item.description}</p>

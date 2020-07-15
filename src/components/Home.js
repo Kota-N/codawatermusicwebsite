@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchIndex } from '../actions/itemsAction';
 import Card from './Card';
+import Download from './Download';
 
 const Home = () => {
   const dispatch = useDispatch();
   const index = useSelector(state => state.index.allData);
+  const dlClick = useSelector(state => state.dlClick);
 
   useEffect(() => dispatch(fetchIndex()), [dispatch]);
 
@@ -19,6 +21,7 @@ const Home = () => {
 
       {index[0] ? (
         <div className="new-arrival">
+          {dlClick.dlPopup ? <Download dlUrl={dlClick.dlUrl} /> : ''}
           <p className="new">NEW</p>
           <Card item={index[0]} />
           <Link className="new-arrival-link" to="/music">
